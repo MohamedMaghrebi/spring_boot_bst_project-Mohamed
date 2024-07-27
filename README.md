@@ -36,5 +36,4 @@ Ensure your application provides a clear and user-friendly interface for data en
 
 
  
-Figure 4 - Tree Result Page
-![image](https://github.com/user-attachments/assets/4b810a45-22c4-4c64-ab71-3e6e679645dc)
+
