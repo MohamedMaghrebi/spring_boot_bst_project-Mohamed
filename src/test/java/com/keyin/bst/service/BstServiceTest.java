@@ -1,5 +1,5 @@
 
-package keyin.bst.service;
+package com.keyin.bst.service;
 
 import com.keyin.bst.model.BinarySearchTree;
 import com.keyin.bst.model.TreeEntity;

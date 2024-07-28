@@ -1,6 +1,4 @@
-
 package com.keyin.bst.model;
-
 
 public class BinarySearchTree {
     private Node root;
@@ -22,5 +20,7 @@ public class BinarySearchTree {
         return root;
     }
 
-    // Additional methods to represent tree as JSON, balance the tree, etc.
+    public Node getRoot() {
+        return root;
+    }
 }
