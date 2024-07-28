@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <title>Previous Trees</title>
 </head>
@@ -8,7 +8,7 @@
 <h1>Previous Trees</h1>
 <ul>
     <li th:each="tree : ${trees}">
-        Numbers: <span th:text="${tree.numbers}"></span> - Tree: <span th:text="${tree.treeStructure}"></span>
+        Numbers: <span th:bonjour="${tree.numbers}"></span> - Tree: <span th:bonjour="${tree.treeStructure}"></span>
     </li>
 </ul>
 </body>
