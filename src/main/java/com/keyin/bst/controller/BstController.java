@@ -1,4 +1,4 @@
-
+//BstController
 package com.keyin.bst.controller;
 
 import com.keyin.bst.model.BinarySearchTree;
@@ -35,7 +35,7 @@ public class BstController {
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
         BinarySearchTree bst = bstService.createTree(numberList);
-        String treeJson = convertTreeToJson(bst.getRoot());  // Convert bst to JSON representation
+        String treeJson = convertTreeToJson(bst.getRoot());
 
         bstService.saveTree(numbers, treeJson);
         model.addAttribute("tree", treeJson);

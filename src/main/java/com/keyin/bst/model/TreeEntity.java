@@ -1,4 +1,4 @@
-
+//TreeEntity
 package com.keyin.bst.model;
 
 import javax.persistence.Entity;
