@@ -8,7 +8,7 @@
 <h1>Previous Trees</h1>
 <ul>
     <li th:each="tree : ${trees}">
-        Numbers: <span th:bonjour="${tree.numbers}"></span> - Tree: <span th:bonjour="${tree.treeStructure}"></span>
+        Numbers: <span th:text="${tree.numbers}"></span> - Tree: <span th:text="${tree.treeStructure}"></span>
     </li>
 </ul>
 </body>

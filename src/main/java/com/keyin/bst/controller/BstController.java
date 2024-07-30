@@ -26,7 +26,7 @@ public class BstController {
 
     @GetMapping("/enter-numbers")
     public String enterNumbers() {
-        return "enterNumbers";
+        return "enterNumbers.html";
     }
 
     @PostMapping("/process-numbers")
@@ -39,13 +39,14 @@ public class BstController {
 
         bstService.saveTree(numbers, treeJson);
         model.addAttribute("tree", treeJson);
-        return "treeView";
+        return "treeView.html";
     }
 
     @GetMapping("/previous-trees")
     public String previousTrees(Model model) {
         List<TreeEntity> trees = bstService.getAllTrees();
         model.addAttribute("trees", trees);
+        
         return "previousTrees";
     }
 
