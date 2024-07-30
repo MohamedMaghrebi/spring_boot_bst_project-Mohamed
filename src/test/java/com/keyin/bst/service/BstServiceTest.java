@@ -5,6 +5,10 @@ import com.keyin.bst.model.BinarySearchTree;
 import com.keyin.bst.model.TreeEntity;
 import com.keyin.bst.model.TreeRepository;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -16,12 +20,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.*;
 
 //@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 public class BstServiceTest {
 
-    @Autowired
+    @InjectMocks
     private BstService bstService;
 
-    @MockBean
+    @Mock
     private TreeRepository treeRepository;
 
     @Test
